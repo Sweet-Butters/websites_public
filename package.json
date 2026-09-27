@@ -1,0 +1,17 @@
+{
+  "name": "websites",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Sweet-Butters personal websites monorepo. Each site under sites/<name>/.",
+  "workspaces": [
+    "sites/*"
+  ],
+  "scripts": {
+    "dev": "echo 'Pick a site: npm run dev -w sites/meme-dashboard'",
+    "build:all": "npm run build --workspaces --if-present",
+    "lint:all": "npm run lint --workspaces --if-present"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
